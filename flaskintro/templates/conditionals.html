@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+
+<body>
+    <h1>Conditionals in Jinja2</h1>
+    <h2>Basic comparisons</h2>
+
+    {% if course == "Backend" %}
+    <h3>Available projects in {{course}}</h3>
+    <ul>
+        <li>Food app</li>
+        <li>Interview series</li>
+        <li>Microblog</li>
+    </ul>
+    {% elif course == "Frontend" %}
+    <h3>Available projects in {{course}}</h3>
+    <ul>
+        <li>Excel clone</li>
+        <li>CSS Basics</li>
+        <li>React</li>
+    </ul>
+
+    {% else %}
+    <p>No course called {{ course }} is available.</p>
+    {% endif %}
+
+    {% if company %}
+    <h3>{{company}}</h3>
+    {% else %}
+    <p>Wrong company</p>
+    {% endif %}
+
+</body>
+
+</html>

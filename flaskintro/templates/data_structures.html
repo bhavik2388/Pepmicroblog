@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structures</title>
+</head>
+<body>
+    <h2>Data Structures in Jinja2</h2>
+    <h3>List operations</h3>
+    <p>
+        My top 3 movies: {{ movies[0] }}, {{ movies[1] }}, {{ movies[2] }}.
+    </p>
+
+    <h3>Dictionary operations</h3>
+    <p>
+        This is a {{ car["brand"] }} {{ car["model"] }}, built in {{ car['year'] }}.
+    </p>
+
+    <h3>Custom Data Structure Operations</h3>
+    <p>
+        First 4 planets are: {{ planets.first }}, {{ planets.second }}, {{ planets.third }}, {{ planets.fourth }}.
+    </p>
+</body>
+</html>
